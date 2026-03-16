@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FisioAtleta – Fisioterapia especializada para atletas amadores. Recuperação, prevenção de lesões e performance. Agende sua consulta online." />
+  <meta name="keywords" content="fisioterapia, atletas amadores, reabilitação esportiva, fisioterapeuta, lesões esportivas" />
+  <title>FisioAtleta | Fisioterapia Esportiva para Atletas Amadores</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="13" stroke="url(#logoGrad)" stroke-width="2"/>
+            <path d="M8 14 C8 10, 20 10, 20 14 C20 18, 8 18, 8 14Z" fill="url(#logoGrad)" opacity="0.3"/>
+            <path d="M14 7 L14 21 M10 10 L18 10 M9 17 L19 17" stroke="url(#logoGrad)" stroke-width="1.8" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00d4aa"/>
+                <stop offset="100%" stop-color="#0099ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span>FisioAtleta</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active" id="nav-hero">Início</a></li>
+        <li><a href="#sobre" class="nav-link" id="nav-sobre">Sobre</a></li>
+        <li><a href="#servicos" class="nav-link" id="nav-servicos">Serviços</a></li>
+        <li><a href="#como-funciona" class="nav-link" id="nav-como">Como Funciona</a></li>
+        <li><a href="#depoimentos" class="nav-link" id="nav-dep">Depoimentos</a></li>
+        <li><a href="#contato" class="nav-link" id="nav-contato">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#agendamento" class="btn-nav-cta" id="btn-nav-agendar">Agendar Consulta</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Especialistas em Performance Esportiva</span>
+      </div>
+
+      <h1 class="hero-title">
+        Sua <span class="gradient-text">Recuperação</span><br />
+        começa aqui,<br />
+        <span class="hero-sub">atleta.</span>
+      </h1>
+
+      <p class="hero-desc">
+        Fisioterapia especializada para atletas amadores que buscam <strong>recuperar, prevenir</strong> e <strong>superar seus limites</strong>. Atendimento humanizado com tecnologia de ponta.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#agendamento" class="btn-primary" id="btn-hero-agendar">
+          <i data-lucide="calendar-check"></i>
+          Agendar Avaliação Gratuita
+        </a>
+        <a href="#servicos" class="btn-secondary" id="btn-hero-servicos">
+          <i data-lucide="play-circle"></i>
+          Ver Serviços
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="850">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Atletas Atendidos</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Satisfação</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="12">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Anos de Experiência</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card-float card-1">
+        <i data-lucide="activity"></i>
+        <div>
+          <strong>Análise Postural</strong>
+          <span>Avaliação completa</span>
+        </div>
+      </div>
+      <div class="hero-card-float card-2">
+        <i data-lucide="zap"></i>
+        <div>
+          <strong>Recuperação Rápida</strong>
+          <span>Protocolo personalizado</span>
+        </div>
+      </div>
+      <div class="hero-illustration">
+        <div class="circle-ring ring-1"></div>
+        <div class="circle-ring ring-2"></div>
+        <div class="circle-ring ring-3"></div>
+        <div class="body-figure">
+          <svg viewBox="0 0 200 400" width="200" height="400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Head -->
+            <circle cx="100" cy="50" r="30" fill="none" stroke="url(#bodyGrad)" stroke-width="2.5"/>
+            <!-- Body -->
+            <path d="M70 80 Q100 70 130 80 L140 200 Q100 220 60 200 Z" fill="url(#bodyFill)" stroke="url(#bodyGrad)" stroke-width="2"/>
+            <!-- Arms -->
+            <path d="M70 100 Q40 130 35 170" stroke="url(#bodyGrad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M130 100 Q160 130 165 170" stroke="url(#bodyGrad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- Legs -->
+            <path d="M85 200 Q75 270 70 340" stroke="url(#bodyGrad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M115 200 Q125 270 130 340" stroke="url(#bodyGrad)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <!-- Pulse lines -->
+            <path d="M40 230 L60 230 L70 210 L80 250 L90 220 L100 230 L120 230 L130 215 L145 230 L165 230" stroke="#00d4aa" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.8" class="pulse-line"/>
+            <defs>
+              <linearGradient id="bodyGrad" x1="0" y1="0" x2="200" y2="400" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00d4aa"/>
+                <stop offset="100%" stop-color="#0099ff"/>
+              </linearGradient>
+              <linearGradient id="bodyFill" x1="0" y1="0" x2="200" y2="400" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00d4aa" stop-opacity="0.1"/>
+                <stop offset="100%" stop-color="#0099ff" stop-opacity="0.05"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <!-- Highlight points on body -->
+        <div class="body-point point-shoulder" title="Ombro"></div>
+        <div class="body-point point-knee" title="Joelho"></div>
+        <div class="body-point point-ankle" title="Tornozelo"></div>
+      </div>
+    </div>
+
+    <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-visual">
+          <div class="sobre-img-wrapper">
+            <div class="sobre-img-bg"></div>
+            <div class="sobre-img-card">
+              <div class="clinic-icon-big">
+                <i data-lucide="stethoscope"></i>
+              </div>
+              <div class="clinic-stats-mini">
+                <div class="mini-stat">
+                  <i data-lucide="award"></i>
+                  <span>CREFITO Certificado</span>
+                </div>
+                <div class="mini-stat">
+                  <i data-lucide="shield-check"></i>
+                  <span>Método Validado</span>
+                </div>
+                <div class="mini-stat">
+                  <i data-lucide="heart-pulse"></i>
+                  <span>Cuidado Humanizado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sobre-badge-float">
+            <i data-lucide="trophy"></i>
+            <div>
+              <strong>+850</strong>
+              <span>Atletas recuperados</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sobre-content">
+          <div class="section-tag">Sobre Nós</div>
+          <h2 class="section-title">
+            Cuidamos do seu corpo<br />
+            <span class="gradient-text">como um atleta merece</span>
+          </h2>
+          <p class="sobre-desc">
+            Na <strong>FisioAtleta</strong>, entendemos que atletas amadores têm paixão e dedicação iguais aos profissionais — mas frequentemente não têm o mesmo suporte. Nossa missão é mudar isso.
+          </p>
+          <p class="sobre-desc">
+            Com uma equipe especializada em fisioterapia esportiva, oferecemos avaliações precisas, tratamentos personalizados e acompanhamento contínuo para que você volte ao esporte mais forte do que nunca.
+          </p>
+          <div class="sobre-features">
+            <div class="feature-item">
+              <div class="feature-icon"><i data-lucide="check-circle-2"></i></div>
+              <div>
+                <strong>Avaliação Funcional Completa</strong>
+                <p>Identificamos a causa raiz da lesão, não apenas os sintomas</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i data-lucide="check-circle-2"></i></div>
+              <div>
+                <strong>Protocolos Personalizados</strong>
+                <p>Cada atleta recebe um plano de tratamento único</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i data-lucide="check-circle-2"></i></div>
+              <div>
+                <strong>Acompanhamento Digital</strong>
+                <p>Acompanhe sua evolução pelo nosso app e chat de IA</p>
+              </div>
+            </div>
+          </div>
+          <a href="#agendamento" class="btn-primary" id="btn-sobre-agendar">
+            <i data-lucide="calendar-plus"></i>
+            Agende sua Avaliação
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Nossos Serviços</div>
+        <h2 class="section-title">
+          Tudo o que você precisa<br />
+          <span class="gradient-text">para voltar ao esporte</span>
+        </h2>
+        <p class="section-subtitle">Tratamentos especializados para cada tipo de lesão e objetivo do atleta amador</p>
+      </div>
+
+      <div class="servicos-grid">
+        <div class="servico-card" id="card-reabilitacao">
+          <div class="servico-icon-wrapper">
+            <div class="servico-icon">
+              <i data-lucide="activity"></i>
+            </div>
+          </div>
+          <h3>Reabilitação de Lesões</h3>
+          <p>Tratamento especializado para lesões musculares, articulares e tendíneas. Protocolo focado na recuperação rápida e segura.</p>
+          <ul class="servico-list">
+            <li><i data-lucide="chevron-right"></i> Lesões musculares</li>
+            <li><i data-lucide="chevron-right"></i> Entorses e distensões</li>
+            <li><i data-lucide="chevron-right"></i> Tendinites</li>
+          </ul>
+          <a href="#agendamento" class="servico-link">Saiba mais <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="servico-card featured" id="card-fisioterapia">
+          <div class="featured-badge">Mais Procurado</div>
+          <div class="servico-icon-wrapper">
+            <div class="servico-icon">
+              <i data-lucide="dumbbell"></i>
+            </div>
+          </div>
+          <h3>Fisioterapia Esportiva</h3>
+          <p>Prevenção e tratamento de lesões específicas de cada modalidade esportiva. Do ciclismo ao futebol, temos expertise.</p>
+          <ul class="servico-list">
+            <li><i data-lucide="chevron-right"></i> Corrida e maratona</li>
+            <li><i data-lucide="chevron-right"></i> Ciclismo e triathlon</li>
+            <li><i data-lucide="chevron-right"></i> Futebol e basquete</li>
+          </ul>
+          <a href="#agendamento" class="servico-link">Saiba mais <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="servico-card" id="card-avaliacao">
+          <div class="servico-icon-wrapper">
+            <div class="servico-icon">
+              <i data-lucide="scan-line"></i>
+            </div>
+          </div>
+          <h3>Avaliação Postural</h3>
+          <p>Análise completa da postura e biomecânica do movimento para identificar desequilíbrios que podem causar lesões.</p>
+          <ul class="servico-list">
+            <li><i data-lucide="chevron-right"></i> Análise de marcha</li>
+            <li><i data-lucide="chevron-right"></i> Avaliação funcional</li>
+            <li><i data-lucide="chevron-right"></i> Mapeamento de risco</li>
+          </ul>
+          <a href="#agendamento" class="servico-link">Saiba mais <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="servico-card" id="card-preventivo">
+          <div class="servico-icon-wrapper">
+            <div class="servico-icon">
+              <i data-lucide="shield-plus"></i>
+            </div>
+          </div>
+          <h3>Programa Preventivo</h3>
+          <p>Controle antes que a lesão aconteça. Identificamos vulnerabilidades e criamos um programa personalizado de prevenção.</p>
+          <ul class="servico-list">
+            <li><i data-lucide="chevron-right"></i> Screening de lesões</li>
+            <li><i data-lucide="chevron-right"></i> Fortalecimento específico</li>
+            <li><i data-lucide="chevron-right"></i> Gestão de carga treino</li>
+          </ul>
+          <a href="#agendamento" class="servico-link">Saiba mais <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="servico-card" id="card-performance">
+          <div class="servico-icon-wrapper">
+            <div class="servico-icon">
+              <i data-lucide="trending-up"></i>
+            </div>
+          </div>
+          <h3>Otimização de Performance</h3>
+          <p>Vá além da recuperação. Melhore sua performance com técnicas avançadas de fisioterapia para atletas.</p>
+          <ul class="servico-list">
+            <li><i data-lucide="chevron-right"></i> Análise de movimento</li>
+            <li><i data-lucide="chevron-right"></i> Liberação miofascial</li>
+            <li><i data-lucide="chevron-right"></i> Dry needling</li>
+          </ul>
+          <a href="#agendamento" class="servico-link">Saiba mais <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="servico-card" id="card-tele">
+          <div class="servico-icon-wrapper">
+            <div class="servico-icon">
+              <i data-lucide="video"></i>
+            </div>
+          </div>
+          <h3>Teleatendimento</h3>
+          <p>Consultas online para triagem, orientação domiciliar e acompanhamento de exercícios terapêuticos à distância.</p>
+          <ul class="servico-list">
+            <li><i data-lucide="chevron-right"></i> Triagem online</li>
+            <li><i data-lucide="chevron-right"></i> Exercícios guiados</li>
+            <li><i data-lucide="chevron-right"></i> Acompanhamento remoto</li>
+          </ul>
+          <a href="#agendamento" class="servico-link">Saiba mais <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section class="como-funciona" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Processo</div>
+        <h2 class="section-title">
+          Como funciona<br />
+          <span class="gradient-text">seu tratamento</span>
+        </h2>
+        <p class="section-subtitle">Um processo simples, claro e eficiente para sua recuperação</p>
+      </div>
+
+      <div class="processo-timeline">
+        <div class="processo-step" id="step-1">
+          <div class="step-number">01</div>
+          <div class="step-icon"><i data-lucide="calendar"></i></div>
+          <div class="step-content">
+            <h3>Agendamento Online</h3>
+            <p>Agende sua avaliação inicial de forma rápida pelo nosso site ou pelo chat de IA. Disponibilidade em tempo real.</p>
+          </div>
+        </div>
+
+        <div class="processo-connector"><div class="connector-line"></div></div>
+
+        <div class="processo-step" id="step-2">
+          <div class="step-number">02</div>
+          <div class="step-icon"><i data-lucide="clipboard-list"></i></div>
+          <div class="step-content">
+            <h3>Avaliação Completa</h3>
+            <p>Avaliação funcional detalhada: histórico esportivo, análise postural, testes de força e mobilidade.</p>
+          </div>
+        </div>
+
+        <div class="processo-connector"><div class="connector-line"></div></div>
+
+        <div class="processo-step" id="step-3">
+          <div class="step-number">03</div>
+          <div class="step-icon"><i data-lucide="file-heart"></i></div>
+          <div class="step-content">
+            <h3>Plano Personalizado</h3>
+            <p>Receba um protocolo de tratamento exclusivo com metas claras e prazo estimado de recuperação.</p>
+          </div>
+        </div>
+
+        <div class="processo-connector"><div class="connector-line"></div></div>
+
+        <div class="processo-step" id="step-4">
+          <div class="step-number">04</div>
+          <div class="step-icon"><i data-lucide="trending-up"></i></div>
+          <div class="step-content">
+            <h3>Tratamento e Evolução</h3>
+            <p>Tratamento com acompanhamento contínuo, ajustes de protocolo e retorno esportivo seguro e progressivo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Depoimentos</div>
+        <h2 class="section-title">
+          O que nossos atletas<br />
+          <span class="gradient-text">estão dizendo</span>
+        </h2>
+      </div>
+
+      <div class="depoimentos-carousel">
+        <div class="depoimentos-track" id="depoimentosTrack">
+
+          <div class="depoimento-card">
+            <div class="dep-header">
+              <div class="dep-avatar">MR</div>
+              <div class="dep-info">
+                <strong>Marcos Ribeiro</strong>
+                <span>Corredor de Rua · Maratona 42km</span>
+              </div>
+              <div class="dep-stars">★★★★★</div>
+            </div>
+            <p>"Sofri com tendinite patelar por meses. Em 6 semanas de tratamento na FisioAtleta, voltei a treinar sem dor. O acompanhamento pelo chat de IA me ajudou muito no dia a dia!"</p>
+            <div class="dep-sport"><i data-lucide="footprints"></i> Corrida</div>
+          </div>
+
+          <div class="depoimento-card">
+            <div class="dep-header">
+              <div class="dep-avatar" style="background: linear-gradient(135deg, #ff6b9d, #c44dff);">AS</div>
+              <div class="dep-info">
+                <strong>Ana Silva</strong>
+                <span>Triatleta Amadora · IronMan 70.3</span>
+              </div>
+              <div class="dep-stars">★★★★★</div>
+            </div>
+            <p>"Fiz a avaliação postural e descobri desequilíbrios que eu nunca teria identificado sozinha. Melhorei muito meu tempo de ciclismo após as correções!"</p>
+            <div class="dep-sport"><i data-lucide="bike"></i> Triathlon</div>
+          </div>
+
+          <div class="depoimento-card">
+            <div class="dep-header">
+              <div class="dep-avatar" style="background: linear-gradient(135deg, #ff8c42, #ff4757);">PO</div>
+              <div class="dep-info">
+                <strong>Pedro Oliveira</strong>
+                <span>Jogador de Futebol Amateur</span>
+              </div>
+              <div class="dep-stars">★★★★★</div>
+            </div>
+            <p>"Rompi o ligamento e pensei que não jogaria mais essa temporada. Com o protocolo da FisioAtleta, voltei em 10 semanas. Atendimento incrível!"</p>
+            <div class="dep-sport"><i data-lucide="circle-dot"></i> Futebol</div>
+          </div>
+
+          <div class="depoimento-card">
+            <div class="dep-header">
+              <div class="dep-avatar" style="background: linear-gradient(135deg, #26de81, #20bf6b);">LC</div>
+              <div class="dep-info">
+                <strong>Lucia Costa</strong>
+                <span>Ciclista Amadora · Gran Fondo</span>
+              </div>
+              <div class="dep-stars">★★★★★</div>
+            </div>
+            <p>"O programa preventivo foi o melhor investimento que fiz. Toda a temporada sem lesões! A equipe é extremamente profissional e atenciosa."</p>
+            <div class="dep-sport"><i data-lucide="bike"></i> Ciclismo</div>
+          </div>
+
+          <div class="depoimento-card">
+            <div class="dep-header">
+              <div class="dep-avatar" style="background: linear-gradient(135deg, #fd9644, #e55039);">RF</div>
+              <div class="dep-info">
+                <strong>Rafael Ferreira</strong>
+                <span>CrossFitter Amateur</span>
+              </div>
+              <div class="dep-stars">★★★★★</div>
+            </div>
+            <p>"A IA deu uma orientação incrível sobre minha dor no ombro antes mesmo de eu conseguir marcar consulta. Tratamento rápido e muito eficaz!"</p>
+            <div class="dep-sport"><i data-lucide="dumbbell"></i> CrossFit</div>
+          </div>
+
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">
+            <i data-lucide="chevron-left"></i>
+          </button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn next" id="nextBtn" aria-label="Próximo">
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AGENDAMENTO ===== -->
+  <section class="agendamento" id="agendamento">
+    <div class="container">
+      <div class="agendamento-grid">
+        <div class="agendamento-info">
+          <div class="section-tag">Agende Agora</div>
+          <h2 class="section-title">
+            Dê o primeiro passo<br />
+            <span class="gradient-text">para sua recuperação</span>
+          </h2>
+          <p>A avaliação inicial é <strong>gratuita</strong>. Em 60 minutos, teremos um diagnóstico completo e um plano de tratamento personalizado para você.</p>
+
+          <div class="agenda-info-items">
+            <div class="agenda-info-item">
+              <div class="agenda-info-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <strong>Localização</strong>
+                <span>Avenida das araucárias, 234 - Águas Claras </span>
+              </div>
+            </div>
+            <div class="agenda-info-item">
+              <div class="agenda-info-icon"><i data-lucide="clock"></i></div>
+              <div>
+                <strong>Horários</strong>
+                <span>Seg–Sex: 7h às 20h | Sáb: 8h às 14h</span>
+              </div>
+            </div>
+            <div class="agenda-info-item">
+              <div class="agenda-info-icon"><i data-lucide="phone"></i></div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>(11) 99999-0000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="agendamento-form-wrapper">
+          <div class="agendamento-form-header">
+            <h3>Solicitar Avaliação Gratuita</h3>
+            <p>Entraremos em contato em até 2 horas</p>
+          </div>
+          <form class="agendamento-form" id="agendamentoForm" novalidate>
+            <div class="form-row">
+              <div class="form-group" id="fg-nome">
+                <label for="nome">Nome Completo *</label>
+                <div class="input-wrapper">
+                  <i data-lucide="user"></i>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+                </div>
+                <span class="form-error" id="err-nome"></span>
+              </div>
+              <div class="form-group" id="fg-email">
+                <label for="email">E-mail *</label>
+                <div class="input-wrapper">
+                  <i data-lucide="mail"></i>
+                  <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+                </div>
+                <span class="form-error" id="err-email"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group" id="fg-telefone">
+                <label for="telefone">Telefone / WhatsApp *</label>
+                <div class="input-wrapper">
+                  <i data-lucide="phone"></i>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required />
+                </div>
+                <span class="form-error" id="err-telefone"></span>
+              </div>
+              <div class="form-group" id="fg-esporte">
+                <label for="esporte">Modalidade Esportiva *</label>
+                <div class="input-wrapper select-wrapper">
+                  <i data-lucide="dumbbell"></i>
+                  <select id="esporte" name="esporte" required>
+                    <option value="">Selecione seu esporte</option>
+                    <option value="corrida">Corrida</option>
+                    <option value="ciclismo">Ciclismo</option>
+                    <option value="futebol">Futebol</option>
+                    <option value="natacao">Natação</option>
+                    <option value="crossfit">CrossFit</option>
+                    <option value="triathlon">Triathlon</option>
+                    <option value="basquete">Basquete</option>
+                    <option value="volei">Vôlei</option>
+                    <option value="outro">Outro</option>
+                  </select>
+                </div>
+                <span class="form-error" id="err-esporte"></span>
+              </div>
+            </div>
+            <div class="form-group" id="fg-queixa">
+              <label for="queixa">Descreva sua queixa ou objetivo *</label>
+              <div class="input-wrapper textarea-wrapper">
+                <i data-lucide="message-square"></i>
+                <textarea id="queixa" name="queixa" rows="3" placeholder="Ex: Dor no joelho após corridas longas, tenho participado de corridas de 10km há 2 anos..." required></textarea>
+              </div>
+              <span class="form-error" id="err-queixa"></span>
+            </div>
+            <div class="form-group">
+              <label for="data-pref">Data de Preferência</label>
+              <div class="input-wrapper">
+                <i data-lucide="calendar"></i>
+                <input type="date" id="data-pref" name="data-pref" />
+              </div>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="btn-form-submit">
+              <i data-lucide="send"></i>
+              Solicitar Avaliação Gratuita
+            </button>
+            <p class="form-privacy">🔒 Seus dados estão protegidos. Nunca compartilhamos suas informações.</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon"><i data-lucide="check-circle-2"></i></div>
+            <h3>Solicitação Enviada!</h3>
+            <p>Em breve nossa equipe entrará em contato pelo WhatsApp ou e-mail para confirmar seu agendamento.</p>
+            <a href="#" class="btn-secondary" id="btn-new-form">Fazer nova solicitação</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-card" id="contato-whatsapp">
+          <div class="contato-icon whatsapp">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+          </div>
+          <h3>WhatsApp</h3>
+          <p>Fale direto com nossa equipe ou tire dúvidas pelo chat de IA</p>
+          <a href="https://wa.me/5511999990000" class="contato-link" target="_blank" rel="noopener">
+            (11) 99999-0000
+            <i data-lucide="external-link"></i>
+          </a>
+        </div>
+
+        <div class="contato-card" id="contato-email">
+          <div class="contato-icon email">
+            <i data-lucide="mail"></i>
+          </div>
+          <h3>E-mail</h3>
+          <p>Para dúvidas, parcerias ou informações sobre planos e convênios</p>
+          <a href="mailto:contato@fisioatleta.com.br" class="contato-link">
+            contato@fisioatleta.com.br
+            <i data-lucide="external-link"></i>
+          </a>
+        </div>
+
+        <div class="contato-card" id="contato-local">
+          <div class="contato-icon local">
+            <i data-lucide="map-pin"></i>
+          </div>
+          <h3>Endereço</h3>
+          <p>Venha nos visitar! Estacionamento gratuito para clientes</p>
+          <a href="#" class="contato-link">
+            Rua das Acácias, 234 – Sala 12
+            <i data-lucide="external-link"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo">
+            <div class="logo-icon">
+              <svg width="26" height="26" viewBox="0 0 28 28" fill="none">
+                <circle cx="14" cy="14" r="13" stroke="url(#footerGrad)" stroke-width="2"/>
+                <path d="M14 7 L14 21 M10 10 L18 10 M9 17 L19 17" stroke="url(#footerGrad)" stroke-width="1.8" stroke-linecap="round"/>
+                <defs>
+                  <linearGradient id="footerGrad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#00d4aa"/>
+                    <stop offset="100%" stop-color="#0099ff"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span>FisioAtleta</span>
+          </a>
+          <p class="footer-brand-desc">Fisioterapia especializada para atletas amadores. Recuperação, prevenção e performance de alto nível.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Menu</h4>
+          <ul>
+            <li><a href="#hero">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#como-funciona">Como Funciona</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#servicos">Reabilitação</a></li>
+            <li><a href="#servicos">Fisioterapia Esportiva</a></li>
+            <li><a href="#servicos">Avaliação Postural</a></li>
+            <li><a href="#servicos">Programa Preventivo</a></li>
+            <li><a href="#servicos">Teleatendimento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contato</h4>
+          <ul>
+            <li><i data-lucide="phone"></i> (11) 99999-0000</li>
+            <li><i data-lucide="mail"></i> contato@fisioatleta.com.br</li>
+            <li><i data-lucide="clock"></i> Seg–Sex: 7h – 20h</li>
+            <li><i data-lucide="clock"></i> Sáb: 8h – 14h</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 FisioAtleta. Todos os direitos reservados.</p>
+        <p>CREFITO Certificado | Fisioterapia Esportiva</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== AI CHAT WIDGET ===== -->
+  <div class="ai-chat-widget" id="aiChatWidget">
+    <div class="chat-bubble" id="chatBubble" aria-label="Abrir chat com IA">
+      <div class="chat-bubble-icon">
+        <i data-lucide="bot"></i>
+        <i data-lucide="x" class="close-icon"></i>
+      </div>
+      <div class="chat-bubble-pulse"></div>
+      <div class="chat-bubble-label">Fale com nossa IA</div>
+    </div>
+
+    <div class="chat-window" id="chatWindow" role="dialog" aria-label="Chat com assistente de fisioterapia">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">
+            <i data-lucide="bot"></i>
+          </div>
+          <div>
+            <strong>FisioIA</strong>
+            <span class="chat-status"><span class="status-dot"></span>Online agora</span>
+          </div>
+        </div>
+        <button class="chat-close-btn" id="chatCloseBtn" aria-label="Fechar chat">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <!-- Messages will be injected here -->
+      </div>
+
+      <div class="chat-suggestions" id="chatSuggestions">
+        <button class="suggestion-chip" data-msg="Quero agendar uma consulta">📅 Agendar consulta</button>
+        <button class="suggestion-chip" data-msg="Tenho dor no joelho, o que pode ser?">🦵 Dor no joelho</button>
+        <button class="suggestion-chip" data-msg="Quais são os serviços disponíveis?">📋 Ver serviços</button>
+        <button class="suggestion-chip" data-msg="Quanto custa a avaliação?">💰 Preços</button>
+      </div>
+
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Digite sua mensagem..." aria-label="Mensagem para a IA" maxlength="500" />
+        <button class="chat-send-btn" id="chatSendBtn" aria-label="Enviar mensagem">
+          <i data-lucide="send"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- BTN SCROLL TO TOP -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Voltar ao topo">
+    <i data-lucide="chevron-up"></i>
+  </button>
+
+  <script src="js/ai-chat.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
